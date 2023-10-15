@@ -39,14 +39,17 @@ st.write(user_input_df)
 with open('pipe.pickle', 'rb') as pickled_model:
     model = pickle.load(pickled_model)
 
-if st.button('Predict'):
-    prediction = model.predict(user_input_df)
-    with st.spinner('Getting diagnostic result...'):
-        time.sleep(1)
-    st.markdown(f'### Diagnostic result:  {prediction}')
+with st.button('Predict'):
+    try:
+        with open('pipe.pickle', 'rb') as pickled_model:
+            model = pickle.load(pickled_model)
+        prediction = model.predict(user_input_df)
+        with st.spinner('Getting diagnostic result...'):
+            time.sleep(1)
+        st.markdown(f'### Diagnostic result:  {prediction}')
 
-    # Set button visibility to True after predicting
-    st.session_state.button_visible = True
+        # Set button visibility to True after predicting
+        st.session_state.button_visible = True
 
 # Learn More button
 if st.session_state.button_visible:
