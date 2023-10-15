@@ -5,7 +5,7 @@ import time
 import webbrowser
 
 # Load your data
-df = pd.read_csv('tibb.csv')
+df = pd.read_csv('tibb2.csv')
 
 # Preprocess the data
 from sklearn.preprocessing import LabelEncoder
