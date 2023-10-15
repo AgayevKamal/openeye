@@ -36,7 +36,7 @@ st.subheader('User Input')
 st.write(user_input_df)
 
 # Predict button
-with open('pipe.pickle', 'rb') as pickled_model:
+with open(pipe.pickle, 'rb') as pickled_model:
     model = pickle.load(pickled_model)
 
 if st.button('Predict'):
