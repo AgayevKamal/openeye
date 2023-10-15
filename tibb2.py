@@ -39,7 +39,7 @@ st.subheader('User Input')
 st.write(user_input_df)
 
 # Predict button
-with open('C:\Users\Hp\Desktop\tibb\dolma.pickle', 'rb') as pickled_model:
+with open('dolma.pickle', 'rb') as pickled_model:
     model = pickle.load(pickled_model)
 
 if st.button('Predict'):
