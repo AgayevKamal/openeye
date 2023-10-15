@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 import time
 import webbrowser
+from sklearn.model_selection import train_test_split
 
 df=pd.read_csv('tibb2.csv')
 x=df.drop(columns=['target'])
