@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 import time
 import webbrowser
+pip install scikit-learn
 from sklearn.linear_model import LogisticRegression
 
 # Load your data
