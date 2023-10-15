@@ -3,7 +3,10 @@ import pandas as pd
 import pickle
 import time
 import webbrowser
-pip install scikit-learn
+streamlit==1.27.2
+scikit-learn==0.24.2
+# other dependencies...
+
 from sklearn.linear_model import LogisticRegression
 
 # Load your data
