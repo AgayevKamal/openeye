@@ -7,9 +7,6 @@ import webbrowser
 # Load your data
 df = pd.read_csv('tibb2.csv')
 
-# Preprocess the data
-from sklearn.preprocessing import LabelEncoder
-
 # Initialize session state
 if 'button_visible' not in st.session_state:
     st.session_state.button_visible = False
