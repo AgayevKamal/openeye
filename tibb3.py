@@ -1,18 +1,3 @@
-import pandas as pd
-import seaborn as sns
-import sklearn
-import warnings
-import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn import metrics
-from mlxtend.feature_selection import SequentialFeatureSelector 
-import matplotlib.pyplot as plt
-from sklearn.compose import make_column_selector, ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.pipeline import make_pipeline, Pipeline 
-from sklearn.impute import SimpleImputer 
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split
 import streamlit as st
 import pandas as pd
 import pickle
