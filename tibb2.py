@@ -47,15 +47,15 @@ st.write(user_input_df)
  #   prediction = model.predict(user_input_df)
   #  with st.spinner('Getting diagnostic result...'):
    #     time.sleep(1)
-    st.markdown(f'### Diagnostic result:  {prediction}')
+    #st.markdown(f'### Diagnostic result:  {prediction}')
 
     # Set button visibility to True after predicting
-    st.session_state.button_visible = True
+    #st.session_state.button_visible = True
 
 # Learn More button
-if st.session_state.button_visible:
-    if st.button('Səhhətinizlə bağlı dərmanları linkdən keçid edərək əldə edə bilərsiniz!'):
-        webbrowser.open('https://aptekonline.az/')
+#if st.session_state.button_visible:
+ #   if st.button('Səhhətinizlə bağlı dərmanları linkdən keçid edərək əldə edə bilərsiniz!'):
+  #      webbrowser.open('https://aptekonline.az/')
 
         
 
