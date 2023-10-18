@@ -40,13 +40,13 @@ st.subheader('User Input')
 st.write(user_input_df)
 
 # Predict button
-with open('dolma.pickle', 'rb') as pickled_model:
-    model = pickle.load(pickled_model)
+#with open('dolma.pickle', 'rb') as pickled_model:
+   # model = pickle.load(pickled_model)
 
-if st.button('Predict'):
-    prediction = model.predict(user_input_df)
-    with st.spinner('Getting diagnostic result...'):
-        time.sleep(1)
+#if st.button('Predict'):
+ #   prediction = model.predict(user_input_df)
+  #  with st.spinner('Getting diagnostic result...'):
+   #     time.sleep(1)
     st.markdown(f'### Diagnostic result:  {prediction}')
 
     # Set button visibility to True after predicting
