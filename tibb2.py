@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import time
 import webbrowser
-!pip install sklearn 
+pip install sklearn 
 import sklearn
 # Load your data
 df = pd.read_csv('tibb2.csv')
